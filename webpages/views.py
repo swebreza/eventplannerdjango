@@ -3,7 +3,25 @@
 # Create your views here.
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the  index.")
+ return render(request,'webpages/index.html')
+
+
+def about(request):
+ return render(request,'webpages/about.html')
+
+
+
+def contactUs(request):
+ return render(request,'webpages/contactUs.html')
+
+
+def portfolio(request):
+ return render(request,'webpages/portfolio.html')
+
+
+def store(request):
+ return render(request,'webpages/store.html')

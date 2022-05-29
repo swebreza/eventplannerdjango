@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="page-section about-heading">
+  <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0"
+      src="{% static '/img/about.jpg' %}">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4"></h2>
+            <section class="getintouch">
+              <div class="container modern-form">
+                <div class="text-center">
+                  <h4 style="color: #212529;font-size: 45px;">Get in touch</h4>
+                </div>
+                <hr class="modern-form__hr">
+                <div class="modern-form__form-container">
+                  <form>
+                    <div class="row">
+                      <div class="col col-contact">
+                        <div class="modern-form__form-group--padding-r form-group mb-3"><input
+                            class="form-control input input-tr" type="text" placeholder="First Name">
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-contact">
+                        <div class="modern-form__form-group--padding-l form-group mb-3"><input
+                            class="form-control input input-tr" type="text" placeholder="Email">
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="modern-form__form-group--padding-t form-group mb-3"><textarea
+                            class="form-control input modern-form__form-control--textarea"
+                            placeholder="Message"></textarea>
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center"><button class="btn btn-primary submit-now" type="submit">Submit
+                          Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<a class="d-md-flex justify-content-md-center align-items-md-center" id="wp" target="_blank"
+  style="background-color: #5bbf21;" href="https://wa.me/919481259910"><i
+    class="fa fa-whatsapp d-md-flex justify-content-md-center align-items-md-center"></i></a>
+{% endblock %}
