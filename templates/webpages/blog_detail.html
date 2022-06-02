@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="bg-faded rounded p-5" style="height: 120.6px;">
+  <h2 class="section-heading mb-4"><span class="section-heading-lower" style="text-align: center;">Blog Detail</span>
+  </h2>
+  <p class="mb-0"></p>
+</div>
+
+<section class="page-section about-heading">
+  <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{{post.imgs.url}}"
+      style="height: 40em;border-radius: 20px;">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4"><span class="section-heading-upper"
+                style="font-weight: bold;font-style: italic;">Posted on {{ post.created_date }}</span><span
+                class="section-heading-lower" style="font-weight: bold;">{{post.title}}</span></h2>
+
+            <p class="mb-0"><span>
+                {{post.body|safe}}
+                <br><br></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="d-md-flex justify-content-md-center align-items-md-center" id="wp" target="_blank"
+  style="background-color: #5bbf21;" href="https://wa.me/919481259910"><i
+    class="fa fa-whatsapp d-md-flex justify-content-md-center align-items-md-center"></i>
+</a>
+
+{% endblock %}

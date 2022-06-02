@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "68487d506311bfd5a03cd59da277fd5d65611ffb46924e5c5f228a545115b668"
+            "sha256": "20212cfad730ff1e36a8d8451e0c6b9c942c192f5fbfae5358cf2433f06821b9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,22 @@
             ],
             "index": "pypi",
             "version": "==4.0.4"
+        },
+        "django-ckeditor": {
+            "hashes": [
+                "sha256:53f6489bfdfc98c2bafd312636db24db8f7964e16178a59153422200ac602de7",
+                "sha256:59130740564fe258fb50ea51ed7daff556129118ed282dc5ce831e0689662826"
+            ],
+            "index": "pypi",
+            "version": "==6.4.1"
+        },
+        "django-js-asset": {
+            "hashes": [
+                "sha256:86f9f300d682537ddaf0487dc2ab356581b8f50c069bdba91d334a46e449f923",
+                "sha256:adc1ee1efa853fad42054b540c02205344bb406c9bddf87c9e5377a41b7db90f"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==2.0.0"
         },
         "djangocms-admin-style": {
             "hashes": [

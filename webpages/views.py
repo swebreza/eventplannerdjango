@@ -19,9 +19,8 @@ def contactUs(request):
  return render(request,'webpages/contactUs.html')
 
 
-def portfolio(request):
- return render(request,'webpages/portfolio.html')
 
 
 def store(request):
  return render(request,'webpages/store.html')
+

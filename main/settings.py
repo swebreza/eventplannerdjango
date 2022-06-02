@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--qk=7_fagheb&szd2#_2oj^%h_4$hmvl4(9*q!9)0dj3$79x87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
+    'feedback.apps.FeedbackConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -123,7 +126,11 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'main/static')
 ]
+ 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
+MEDIA_URL="/media/"
 
+# media\blogs\2022\05\sergey-mikheev-H53P-A_396w-unsplash.jpg
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
