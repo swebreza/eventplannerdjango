@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.db import models
 from ckeditor.fields import RichTextField
-from django.utils.text import slugify
+# from django.utils.text import slugify
 
 
 # Create your models here.

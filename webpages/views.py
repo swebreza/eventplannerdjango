@@ -15,12 +15,6 @@ def about(request):
 
 
 
-def contactUs(request):
- return render(request,'webpages/contactUs.html')
-
-
-
-
 def store(request):
  return render(request,'webpages/store.html')
 

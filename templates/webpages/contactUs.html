@@ -2,6 +2,10 @@
 {% load static %}
 {% block content %}
 <br />
+<center>
+  {% include 'message.html' %}
+</center>
+<br />
 <section class="page-section about-heading">
   <div class="container">
     <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static '/img/about.jpg' %}" /> -->
@@ -18,19 +22,21 @@
                 <hr class="modern-form__hr">
                 <div class="modern-form__form-container">
                   <!-- Form Starts Here -->
-                  <form>
+
+                  <form method="POST" action="{% url 'contactUs' %}">
+                    {% csrf_token %}
                     <div class="row">
                       <div class="col col-contact">
-                        <div class="modern-form__form-group--padding-r form-group mb-3"><input
-                            class="form-control input input-tr" type="text" placeholder="First Name">
+                        <div class="modern-form__form-group--padding-r form-group mb-3">
+                          <input name="name" class="form-control input input-tr" type="text" placeholder="First Name">
                           <div class="line-box">
                             <div class="line"></div>
                           </div>
                         </div>
                       </div>
                       <div class="col col-contact">
-                        <div class="modern-form__form-group--padding-l form-group mb-3"><input
-                            class="form-control input input-tr" type="text" placeholder="Email">
+                        <div class="modern-form__form-group--padding-l form-group mb-3">
+                          <input name="email" class="form-control input input-tr" type="text" placeholder="Email">
                           <div class="line-box">
                             <div class="line"></div>
                           </div>
@@ -39,8 +45,8 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <div class="modern-form__form-group--padding-t form-group mb-3"><textarea
-                            class="form-control input modern-form__form-control--textarea"
+                        <div class="modern-form__form-group--padding-t form-group mb-3">
+                          <textarea name="message" class="form-control input modern-form__form-control--textarea"
                             placeholder="Message"></textarea>
                           <div class="line-box">
                             <div class="line"></div>
